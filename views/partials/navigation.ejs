@@ -3,8 +3,9 @@
       <% if (menuLinks.length > 0) { %>
         <% menuLinks.forEach(function(link) { %>
           <li class="navigation__item">
-            <a>
+            <a class="navigation__link" href="<%= link.path %>"
                 
+                [<%= link.label %>]
             </a>
           </li>
         <% }) %>

@@ -5,15 +5,7 @@
   </head>
   <body>
     <main>
-    <!-- 🏗 Structo the Builder -->
-    <!-- Wykorzystaj odpowiednią składnię EJS do odpowiednich zadań. -->
-    <!-- Podpowiedź: <%- include(..., { menuLinks: ..., activeLinkPath: ... }); %> -->
-    <%- include(..., { menuLinks: ..., activeLinkPath: ... }); //nwm jezu
-    <nav>
-      <a href="/">Home</a>
-      <a href="/product/new">Newest product</a>
-      <a href="/logout">Logout</a>
-    </nav>
+    <%- include('views/partials/navigation.ejs' { menuLinks: ..., activeLinkPath: ... }) %>
     <h1 class="heading">Add product</h1>
     <form class="form" action="/product/add" method="POST">
         <nav>class="form__group">
