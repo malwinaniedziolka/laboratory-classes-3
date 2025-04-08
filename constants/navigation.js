@@ -1,10 +1,10 @@
-// 🏗 Structo the Builder
+const HOME_LINK = {};
 // Stwórz stałą HOME_LINK.
 // Podpowiedź: const HOME_LINK = { ... };
 
-// 🏗 Structo the Builder
+const LOGOUT_LINKS = {};
 // Stwórz stałą LOGOUT_LINKS.
 // Podpowiedź: const LOGOUT_LINKS = [ ... ];
 
-// 🏗 Structo the Builder
+const MENU_LINKS = {};
 // Stwórz stałą MENU_LINKS.

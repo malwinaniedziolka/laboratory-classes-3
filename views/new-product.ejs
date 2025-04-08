@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= headTitle %></title>
+    <link rel="stylesheet" href="public/css/main.css">
+</head>
+<body>
+    <main>
+        <nav>
+          <a href='/'>Home</a>
+          <br /><a href='/product/add'>Add product</a>
+          <br /><a href='/logout'>Logout</a>
+        </nav>
+        <h1 class="heading">Newest product</h1>
+        ${
+        data
+          ? `<br /><div>New product data - ${data}</div>`
+          : "<br /><div>No new products available.</div>"
+        }
+    </main>
+</body>
+</html>
+

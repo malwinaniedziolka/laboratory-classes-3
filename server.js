@@ -10,20 +10,13 @@ const logoutRoutes = require("./routing/logout");
 const killRoutes = require("./routing/kill");
 const homeRoutes = require("./routing/home");
 const { STATUS_CODE } = require("./constants/statusCode");
-// 📦 Dependy the Importer
-// Zaimportuj moduł 'getFileFromAbsolutePath', może Ci się przydać do ustawienia katalogu plików statycznych!
+const getFileFromAbsolutePath = require("./utils/getFileFromAbsolutePath");
 
 const app = express();
+app.set('view engine', 'ejs'); 
+app.set('views', __dirname + '/views');
 
-// 🔧 Configo the Setter
-// Zarejestruj "view engine" jako "ejs".
-// Podpowiedź: app.set(...);
-// Zarejestruj "views" jako "views".
-// Podpowiedź: app.set(...);
-
-// 🔧 Configo the Setter
-// Ustaw publiczny katalog plików statycznych w middleware.
-// Podpowiedź: app.use(express.static(...));
+app.use(express.static(path.join(__dirname, "public")));
 
 app.use(bodyParser.urlencoded({ extended: false }));
 
